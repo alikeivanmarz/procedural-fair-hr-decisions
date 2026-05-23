@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite the thesis listed below."
+title: "Procedural-Fair-HR-Decisions: A reproducibility package for procedural fairness in HR machine learning"
+authors:
+  - family-names: Lipu
+    given-names: Nahid Hasan
+    affiliation: "Unitec Institute of Technology, New Zealand"
+  - family-names: Keivanmarz
+    given-names: Ali
+    email: akeivanmarz@unitec.ac.nz
+    affiliation: "Unitec Institute of Technology, New Zealand"
+version: "1.0.0"
+date-released: 2026-05-23
+license: MIT
+repository-code: "https://github.com/alikeivanmarz/procedural-fair-hr-decisions"
+keywords:
+  - algorithmic fairness
+  - procedural justice
+  - explainable AI
+  - SHAP
+  - bias mitigation
+  - human resources analytics
+  - counterfactual fairness
+preferred-citation:
+  type: thesis
+  title: "Procedural Fairness in HR Machine Learning: Auditing Statistical Bias and Evaluating Mitigation"
+  authors:
+    - family-names: Lipu
+      given-names: Nahid Hasan
+  year: 2026
+  month: 5
+  institution:
+    name: "Unitec Institute of Technology"
+    address: "Auckland, New Zealand"
+  thesis-type: "Master's thesis"
+  supervisors:
+    - family-names: Keivanmarz
+      given-names: Ali
+    - family-names: Sharifzadeh
+      given-names: Hamid

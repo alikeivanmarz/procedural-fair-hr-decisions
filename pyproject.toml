@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "procedural-fair-hr"
+version = "1.0.0"
+description = "Reproducibility package for procedurally-just, explainable fair AI in HR decisions."
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Nahid Hasan Lipu" },
+    { name = "Ali Keivanmarz", email = "akeivanmarz@unitec.ac.nz" },
+]
+maintainers = [
+    { name = "Ali Keivanmarz", email = "akeivanmarz@unitec.ac.nz" },
+]
+keywords = [
+    "algorithmic fairness",
+    "procedural justice",
+    "explainable AI",
+    "SHAP",
+    "bias mitigation",
+    "human resources analytics",
+    "counterfactual fairness",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "numpy>=1.24,<2.0",
+    "pandas>=2.0,<3.0",
+    "scipy>=1.11",
+    "scikit-learn>=1.4,<2.0",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "pyarrow>=14.0",
+    "xgboost>=2.0",
+    "torch>=2.0,<3.0",
+    "aif360==0.6.1",
+    "fairlearn>=0.13,<0.15",
+    "aequitas",
+    "dice-ml>=0.12",
+    "shap>=0.45",
+    "folktables",
+    "ucimlrepo",
+    "openml",
+    "kaggle",
+    "imbalanced-learn>=0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[project.urls]
+Homepage = "https://github.com/alikeivanmarz/procedural-fair-hr-decisions"
+Repository = "https://github.com/alikeivanmarz/procedural-fair-hr-decisions"
+Issues = "https://github.com/alikeivanmarz/procedural-fair-hr-decisions/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["procedural_fair_hr*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-q --strict-markers"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "UP", "RUF"]
+ignore = ["E203"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+ignore_missing_imports = true

@@ -1,0 +1,4 @@
+dataset,model,method,sample_n,gender_mean_abs_shap,total_mean_abs_shap,gender_share,top5_features,train_seconds,shap_seconds
+oulad,RF,identity_preprocessing,500,0.019547383740697935,0.2755254550901886,0.07094583596386558,"highest_education=0.0470, imd_band=0.0401, code_presentation=0.0331, region=0.0307, code_module=0.0300",0.57,35.29
+oulad,GB,identity_preprocessing,500,0.009138749511561059,0.15360128649245258,0.059496568812983895,"highest_education=0.0379, imd_band=0.0237, num_of_prev_attempts=0.0198, code_presentation=0.0186, code_module=0.0142",0.96,4.14
+oulad,XGB,identity_preprocessing,500,0.016503686544640087,0.225641797426986,0.07314108792268599,"highest_education=0.0429, imd_band=0.0309, code_module=0.0272, code_presentation=0.0263, region=0.0242",0.12,4.53
