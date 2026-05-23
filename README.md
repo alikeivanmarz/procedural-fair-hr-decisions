@@ -1,7 +1,7 @@
 # Procedural Fairness in HR Machine Learning
 
 > Reproducibility package for the Master's thesis **"Procedural Fairness in HR
-> Machine Learning: Auditing Statistical Bias and Evaluating Mitigation"**
+> Machine Learning: Auditing Bias, Explainability, and Mitigation"**
 > (Lipu, 2026, Unitec Institute of Technology).
 
 This repository contains the code, datasets specification, result tables, and
@@ -172,7 +172,7 @@ If you use this code or its results, please cite the thesis:
 ```bibtex
 @mastersthesis{lipu2026procedural,
   title  = {Procedural Fairness in {HR} Machine Learning:
-            Auditing Statistical Bias and Evaluating Mitigation},
+            Auditing Bias, Explainability, and Mitigation},
   author = {Lipu, Nahid Hasan},
   school = {Unitec Institute of Technology},
   year   = {2026},

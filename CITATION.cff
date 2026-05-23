@@ -23,7 +23,7 @@ keywords:
   - counterfactual fairness
 preferred-citation:
   type: thesis
-  title: "Procedural Fairness in HR Machine Learning: Auditing Statistical Bias and Evaluating Mitigation"
+  title: "Procedural Fairness in HR Machine Learning: Auditing Bias, Explainability, and Mitigation"
   authors:
     - family-names: Lipu
       given-names: Nahid Hasan
